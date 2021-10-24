@@ -1,0 +1,644 @@
+/********************************************
+                POLICES
+********************************************/
+
+@font-face {
+    font-family: "montserrat-thin";
+    src: url("../font/montserrat/Montserrat-Thin.ttf");
+}
+@font-face {
+    font-family: "montserrat-light";
+    src: url("../font/montserrat/Montserrat-Light.ttf");
+}
+@font-face {
+    font-family: "montserrat";
+    src: url("../font/montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "montserrat-medium";
+    src: url("../font/montserrat/Montserrat-Medium.ttf");
+}
+@font-face {
+    font-family: "montserrat-semibold";
+    src: url("../font/montserrat/Montserrat-SemiBold.ttf");
+}
+@font-face {
+    font-family: "montserrat-bold";
+    src: url("../font/montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "kalam-light";
+    src: url("../font/kalam/Kalam-Light.ttf");
+}
+@font-face {
+    font-family: "kalam";
+    src: url("../font/kalam/Kalam-Regular.ttf");
+}
+@font-face {
+    font-family: "kalam-bold";
+    src: url("../font/kalam/Kalam-Bold.ttf");
+}
+/********************************************
+                GENERAL
+********************************************/
+
+html {
+    /* Couleur */
+    background-image: url("../images/fond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    /* Couleur */
+    color:white;
+
+    /* Marge */
+    margin: 0;
+    padding: 0;
+
+    /* Position */
+    display: block;
+
+    /* Police */
+    font-family: "montserrat";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+}
+
+.big-icon i {
+    /* Marge */
+    margin: 38px 0 20px 0;
+
+    /* Police */
+    font-size: 100px;
+    color: #005fdb;
+}
+
+.big-icon p {
+    /* Police */
+    font-family: "kalam-bold";
+    font-size: 35px;
+    color: #005fdb;
+}
+
+/********************************************
+            ORGANISATION CARD
+********************************************/
+
+.card-inner {
+    /* Postion */
+	position: absolute;
+	left: 540px;
+	right: 0px;
+	top: 73.5px;
+	bottom: 75px;
+
+    /* Taille */
+	width: auto;
+	height: auto;
+
+    /* Marge */
+    padding: 0;
+    
+    /* Apparence */
+	overflow: hidden;
+
+    /* Couleur */
+    background-color: white;
+}
+
+.card-inner::before, .card-inner::after  {
+    /* Position */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 20px;
+    z-index: 10;
+
+    /* Taille */
+    height: 30px;
+    
+    /* Couleur */
+    background-color: white;
+    
+    /* Apparence */
+    content: '';
+}
+
+.card-inner .card-wrap {
+    /* Position */
+    position: relative;
+
+    /* Marge */
+    padding: 30px 30px 0 30px;
+
+    /* Taille */
+    height: 100%;
+
+    /* Apparence */
+    overflow: auto;
+}
+
+.content {
+    /* Position */
+    position: relative;
+
+    /* Marge */
+    margin: 0 0 40px 0;
+}
+
+.row .col {
+    /* Position */
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+
+    /* Marge */
+    padding: 30px;
+
+    /* Police */
+    font-size: 16px;
+}
+
+/********************************************
+                HEADER
+********************************************/
+
+.header {
+    /* Position */
+    position: relative;
+    float: left;
+    left: 0;
+    top: 73.5px;
+    z-index: 100;
+    text-align: center;
+
+    /* Marge */
+    margin-right: 8px;
+   
+    /* Taille */
+    width: 125px;
+    
+    /* Apparence */
+    opacity: 1;
+    visibility: visible;
+}
+
+/********************************************
+                MENU
+********************************************/
+
+.main-menu {
+    /* Taille */
+    width:100%;
+}
+
+.main-menu ul {
+    /* Marge */
+    margin: 0;
+    padding: 0;
+
+    /* Apparence */
+    list-style: none;
+}
+
+.main-menu ul li {
+    /* Position */
+    display: block;
+
+    /* Marge */
+    margin-bottom: 0px;
+}
+
+.main-menu ul li a {
+    /* Marge */
+    padding: 20px 3px;
+
+    /* Position */
+    position: relative;
+    display: block;
+    height: auto;
+
+    /* Couleur */
+    background-color: white;
+    color: black;
+
+    /* Police */
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+a .icon {
+    /* Marge */
+    margin: 0 auto;
+    line-height: 30px;
+
+    /* Position */
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+
+    /* Police */
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8); 
+    
+    /* Taille */
+    width: 40px;
+    height: 35px;
+}
+
+a .link {
+    /* Marge */
+    line-height: 20px;
+
+    /* Position */
+    position: relative;
+    left: 0;
+    top: 0;
+
+    /* Taille */
+    width: 100%;
+
+    /* Police */
+    font-size: 12px;
+}
+
+.active-link i, .active-link span {
+    /* Couleur */
+    color: #005fdb;
+}
+
+/********************************************
+                HOME CARD
+********************************************/
+
+#home-card {
+    /* Position */
+    position: relative;
+    top: 73.5px;
+    float: left;
+    z-index: 11;
+
+    /* Taille */
+    width: 400px;
+    height: 100%;
+}
+
+#home-card::before {
+    /* Position */
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    /* Taille */
+    width: 100%;
+    height: 100%;
+    
+    /* Apparence */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    content: '';
+}
+
+.profile {
+    /* Position */
+    position: relative;
+    padding: 210px 50px 50px 50px;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+
+    /* Taille */
+    width: 100%;
+    height: 100%;
+    
+    /* Police */
+    text-align: center;
+    background-color: white;
+}
+
+.photo {
+    /* Position */
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    /* Taille */
+    height: 50%;
+    width: 100%;
+
+    /* Fond */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 38%;
+
+    /* Apparence */
+    overflow: hidden;
+}
+
+.title {
+    /* Police */
+    font-size: 28px;
+    font-family: "montserrat-medium";
+    color: black;
+
+    /* Marge */
+    margin: 10px 0 10px 0;
+}
+
+.subtitle {
+    /* Position */
+    position: relative;
+    display: inline-block;
+
+    /* Taille */
+    height: 20px;
+
+    /* Marge */
+    margin: 0;
+    margin: 5px 0 20px 0;
+    line-height: 15px;
+
+    /* Police */
+    font-size: 18px;
+    color:black;
+}
+
+.social {
+    /* Position */
+    position: relative;
+
+}
+
+.social a {
+    /* Position */
+    display: inline-block;
+    vertical-align: middle;
+
+    /* Marge */
+    margin: 0 10px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    outline: none;
+
+    /* Police */
+    font-size: 25px;
+    /* color: black; */
+    color: #005fdb;
+}
+
+.liens {
+    /* Position */
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+
+    /* Taille */
+    width: 100%;
+    height: 60px;
+
+    /* Apparence */
+    font-family: "kalam";
+    font-size: 20px;
+    border-top: solid 1.5px black;
+}
+
+.lien {
+    /* Position */
+    position: relative;
+    display: block;
+    float: none;
+
+    /* Taille */
+    width: 100%;
+
+    /* Marge */
+    line-height: 65px;
+
+    /* Police */
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.lien:hover {
+    /* Apparence */
+    text-decoration: none;
+    color: #005fdb;
+}
+
+/********************************************
+            ABOUT CARD
+********************************************/
+.infos p {
+    /* Police */
+    font-family: "montserrat";
+    font-size: 17px;
+    color: black;
+}
+
+.infos i {
+    /* Marge */
+    margin: 30px 0 10px 0;
+
+    /* Police */
+    font-size: 20px;
+    color: black;
+}
+
+.qualites .col-6 p {
+    /* Marges */
+    margin: 12px 10px 10px 0;
+    padding: 5px;
+
+    /* Police */
+    font-size: 16px;
+    text-align: center;
+
+    /* Bord */
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.interets .title {
+    /* Marges */
+    padding-top: 50px;
+    margin: 60px 0;
+
+    /* Bord */
+    border-top: 1px solid black;
+
+    /* Police */
+    font-size: 20px;
+    font-family: "montserrat-medium";
+    text-align: center;
+}
+
+.activites .col-6 {
+    /* Position */
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.activites .icon {
+    /* Marges */
+    margin: 0 auto;
+
+    /* Taille */
+    width: 60px;
+    height: 60px;
+
+    /* Couleur */
+    /* color: white; */
+    color: #005fdb;
+    /* background-color: #005fdb; */
+
+    /* Bord */
+    border-radius: 20px;
+    border: 2px solid #005fdb;
+}
+
+.activites .icon i {
+    /* Position */
+    display: block;
+    line-height: 60px;
+
+    /* Police */
+    font-size: 30px;
+}
+
+.activites .name {
+    /* Marges */
+    margin: 20px 0 5px 0;
+
+    /* Police */
+    font-family: "montserrat-medium";
+    font-size: 16px;
+    color: #005fdb;
+}
+
+.activites .desc {
+    /* Apparence */
+    line-height: 20px;
+
+    /* Police */
+    font-size: 15px;
+}
+
+/********************************************
+            STUDIES CARD
+********************************************/
+
+.studies-title {
+    /* Position */
+    position: relative;
+
+    /* Marge */
+    padding: 12px;
+    margin: 0px 0 25px 0;
+
+    /* Police */
+    font-family: "montserrat-medium";
+    text-align: center;
+    font-size: 17px;
+    color: #005fdb;
+
+    /* Apparence */
+    border: 1px solid #005fdb;
+    border-radius: 10px; 
+}
+
+.studies-item .icon {
+    /* Position */
+    position: relative;
+    height: 35px;
+
+    /* Police */
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.studies-item .school, .studies-item .place, .studies-item .date {
+    /* Police */
+    font-size: 15px;
+    color: black;
+    font-weight: 400;
+    text-transform: none;
+    font-family: "montserrat-light";
+}
+
+.studies .desc1 p {
+    /* Marge */
+    margin: 8px 0 40px 0;
+
+    /* Police */
+    font-size: 15px;
+    text-align: center;
+}
+
+.studies .desc2 p {
+    /* Marge */
+    margin: 8px 0 0px 0;
+
+    /* Police */
+    font-size: 15px;
+    text-align: center;
+}
+
+.studies-item .school {
+    /* Marge */
+    padding-bottom: 25px;
+
+    /* Bord */
+    border-bottom: 1px solid black;
+}
+
+/********************************************
+            CONTACT CARD
+********************************************/
+.contact .row .logo {
+   margin-top: 125px;
+}
+
+.coordonnes {
+    margin-top: 160px;
+    font-size: 17px;
+    text-align: left;
+}
+
+.contact .attr p {
+    border: 1.5px solid #005fdb;
+    border-radius: 5px;
+    color: #005fdb;
+    padding: 5px 10px;
+    font-family: "montserrat-medium";
+}
+
+.contact .mb-3 p {
+    margin-top: 6px;
+}
