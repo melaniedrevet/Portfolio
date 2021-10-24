@@ -489,7 +489,7 @@ a .link {
     margin: 60px 0;
 
     /* Bord */
-    border-top: 1px solid black;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 
     /* Police */
     font-size: 20px;
@@ -618,9 +618,115 @@ a .link {
     border-bottom: 1px solid black;
 }
 
+
+/********************************************
+            COMPETENCES CARD
+********************************************/
+
+.skills .title {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    margin-left: 40px;
+}
+
+.skills .title .icon {
+    position: relative;
+    color: #005fdb;
+    float: left;
+    font-size: 25px;
+}
+
+.skills .title .name {
+    font-size: 17px;
+    margin: 5px 0 0 40px;
+    text-transform: uppercase;
+}
+
+/* Listes  */
+
+.skills ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills ul li .name {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    line-height: 14px;
+}
+
+/* Lignes de séparation */
+
+.titre, .transversales, .coding, .learning {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+}
+
+.titre, .coding, .design {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Transversales */
+
+.liste li {
+    position: relative;
+    padding: 6px 0;
+    margin-left: 45px;
+}
+
+.liste li .name {
+    position: relative;
+    padding-left: 30px;
+}
+
+.liste li .icon {
+    position: relative;
+    float: left;
+}
+
+/* Code */
+
+.coding .col-6, .learning .col-6 {
+    text-align: center;
+}
+
+.coding .icons, .learning .icons {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Design et Langues */
+
+.design ul li, .langues ul li {
+    position: relative;
+    padding: 20px 0;
+}
+
+.design .progress, .langues .progress {
+    position: relative;
+    display: block;
+    width: 95%;
+    height: 4px;
+    background-color: #d8dbe2;
+}
+
+.design .pourcentage, .langues .pourcentage {
+    position: absolute;
+    height: 100%;
+    background-color: #005fdb;
+}
+
+
+
+
+
 /********************************************
             CONTACT CARD
 ********************************************/
+
+
 .contact .row .logo {
    margin-top: 125px;
 }
