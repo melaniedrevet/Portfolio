@@ -54,3 +54,25 @@ $('.main-menu').on('click', 'a', function() {
         }
         return false;
 });
+
+$('.has-popup-media').magnificPopup({
+    type: 'inline',
+    overflowY: 'auto',
+    closeBtnInside: true,
+    mainClass: 'mfp-fade popup-box-inline'
+});
+
+
+$(document).ready(function() {
+    // init Isotope
+    var $grid = $('.grid').isotope({
+        itemSelector: '.element-item'
+    })
+    // filter items on button click
+    $('.filter').on( 'click', function() {
+        $('.filter').removeClass('active');
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        $(this).addClass('active');
+    });
+})

@@ -1,0 +1,113 @@
+/********************************************
+                POLICES
+********************************************/
+
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "montserrat-medium";
+    src: url("../fonts/montserrat/Montserrat-Medium.ttf");
+}
+
+/********************************************
+            ABOUT CARD
+********************************************/
+
+.infos p {
+    /* Police */
+    font-family: "montserrat";
+    font-size: 17px;
+    color: black;
+}
+
+.infos i {
+    /* Marge */
+    margin: 30px 0 10px 0;
+
+    /* Police */
+    font-size: 20px;
+    color: black;
+}
+
+.qualites .col-6 p {
+    /* Marges */
+    margin: 12px 10px 10px 0;
+    padding: 5px;
+
+    /* Police */
+    font-size: 16px;
+    text-align: center;
+
+    /* Bord */
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.interets .title {
+    /* Marges */
+    padding-top: 50px;
+    margin: 60px 0;
+
+    /* Bord */
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+    /* Police */
+    font-size: 20px;
+    font-family: "montserrat-medium";
+    text-align: center;
+}
+
+.activites .col-6 {
+    /* Position */
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.activites .icon {
+    /* Marges */
+    margin: 0 auto;
+
+    /* Taille */
+    width: 60px;
+    height: 60px;
+
+    /* Couleur */
+    /* color: white; */
+    color: #005fdb;
+    /* background-color: #005fdb; */
+
+    /* Bord */
+    border-radius: 20px;
+    border: 2px solid #005fdb;
+}
+
+.activites .icon i {
+    /* Position */
+    display: block;
+    line-height: 60px;
+
+    /* Police */
+    font-size: 30px;
+}
+
+.activites .name {
+    /* Marges */
+    margin: 20px 0 5px 0;
+
+    /* Police */
+    font-family: "montserrat-medium";
+    font-size: 16px;
+    color: #005fdb;
+}
+
+.activites .desc {
+    /* Apparence */
+    line-height: 20px;
+
+    /* Police */
+    font-size: 15px;
+}

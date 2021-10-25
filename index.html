@@ -4,8 +4,18 @@
     <head>
         <meta charset="utf-8">
         <title>Portfolio - Mélanie Drevet</title>
+        <!-- Mes styles CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/home.css">
+        <link rel="stylesheet" href="assets/css/about.css">
+        <link rel="stylesheet" href="assets/css/studies.css">
+        <link rel="stylesheet" href="assets/css/competences.css">
+        <link rel="stylesheet" href="assets/css/realisations.css">
+        <link rel="stylesheet" href="assets/css/experiences.css">
+        <link rel="stylesheet" href="assets/css/contact.css">
+        <!-- Autres CSS -->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <script src="https://kit.fontawesome.com/dd5369e723.js" crossorigin="anonymous"></script>
     </head>
 
@@ -55,7 +65,7 @@
             </header>
             <div class="card-started" id="home-card">
                 <div class="profile">
-                    <div class="photo" style="background-image: url(assets/images/profil.png);"></div>
+                    <div class="photo" style="background-image: url(assets/images/presentation/profil.png);"></div>
                     <div class="title"> Mélanie Drevet </div>
                     <div class="subtitle">Étudiante - Développement web</div>
                     <div class="social">
@@ -66,13 +76,13 @@
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </div>
-                    <div class="liens">
-                        <a href="./assets/images/CV.png" target="_blank" class="lien">
+                    <div class="liens text-center">
+                        <a href="./assets/images/CV/CV.png" target="_blank" class="lien">
                             <span>CV</span>
                         </a>
-                        <a href="#" class="lien contact">
+                        <!-- <a href="" class="lien contact">
                             <span>Blog</span>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
@@ -82,7 +92,7 @@
                         <div class="row">
                             <div class="col-6 big-icon text-center">
                                 <i class="fas fa-user"></i>
-                                <p>A PROPOS</p>
+                                <p>A propos</p>
                             </div>
                             <div class="col-6">
                                 <div class="row infos text-center">
@@ -226,7 +236,7 @@
                             </div>
                             <div class="col-6 big-icon text-center">
                                 <i class="fas fa-graduation-cap"></i>
-                                <p>ÉTUDES</p>
+                                <p>Études</p>
                             </div>
                         </div>
                     </div>
@@ -238,7 +248,7 @@
                         <div class="row">
                             <div class="col-6 big-icon text-center titre">
                                 <i class="fas fa-user"></i>
-                                <p>COMPÉTENCES</p>
+                                <p>Compétences</p>
                             </div>
                             <div class="col-6 transversales">
                                 <div class="title">
@@ -390,8 +400,346 @@
             <div class="card-inner" id="works-card">
                 <div class="card-wrap">
                     <div class="content works">
-                        <div class="title">
-                            <p>Réalisations</p>
+                        <div class="row">
+                            <div class="col-6 filter-button">
+                                <ul id="filter" class="button-group">
+                                    <li><button class="filter" data-filter="*">Tout</button></li>
+                                    <li><button class="filter" data-filter=".dev">Développement web</button></li>
+                                    <li><button class="filter" data-filter=".des">Design</button></li>
+                                    <li><button class="filter" data-filter=".js">Projets JS</button></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 big-icon text-center">
+                                <i class="fas fa-user"></i>
+                                <p>Réalisations</p>
+                            </div>
+                        </div>
+                        <div class="row grid mt-5">
+                            <div class="col-6 element-item dev mb-5">
+                                <div class="box-item">
+                                    <div class="image">
+                                       <a href="#popup-1" class="has-popup-media">
+                                            <img src="./assets/images/projets/dev/blog.png" alt="blog">
+                                       </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="#popup-1" class="name has-popup-media">Blog de voyage</a>
+                                    </div>
+                                    <div class="mfp-container">
+                                        <div class="mfp-content">
+                                            <div id="popup-1" class="popup-box mfp-fade mfp-hide">
+                                                <div class="content">
+                                                    <div class="image pl-3 mb-4 text-center">
+                                                        <img src="./assets/images/projets/dev/blog.png" alt="blog">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="post-box">
+                                                            <h4>Blog de voyage</h4>
+                                                            <div class="blog-detail mb-5"> Mars 2021 - Groupe </div>
+                                                            <div class="blog-content">
+                                                                <p>
+                                                                    Lors d'un projet rassemblant les 4 domaines de MMI, nous devions réaliser un 
+                                                                    <b>site web </b>, <b> une vidéo </b> et <b>une campagne photo</b> 
+                                                                    sur un sujet dit "invisible", sur ce que nous portons plus d'attention. <br> <br>
+                                                                    Nous sommes parti sur les <b>salutations</b>, car aujourd'hui, le salut est 
+                                                                    devenu habituel. <br> <br>
+                                                                    Nous avons donc réalisé un site web de type blog, où on explique l'<b>origine du salut</b> et
+                                                                    les <b>différentes formes</b> présentes dans le monde.
+                                                                </p>
+                                                                <p> Technologies utilisées : HTML, CSS, Javascript, PHP, MySQL</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="close"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 element-item dev mb-5">
+                                <div class="box-item">
+                                    <div class="image">
+                                       <a href="#popup-2" class="has-popup-media">
+                                            <img src="./assets/images/projets/dev/pokemon.png" alt="pokemon">
+                                       </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="#popup-2" class="name has-popup-media">Site de Pokémon</a>
+                                    </div>
+                                    <div class="mfp-container">
+                                        <div class="mfp-content">
+                                            <div id="popup-2" class="popup-box mfp-fade mfp-hide">
+                                                <div class="content">
+                                                    <div class="image pl-3 mb-4 text-center">
+                                                        <img src="./assets/images/projets/dev/pokemon.png" alt="pokemon">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="post-box">
+                                                            <h4>Site de Pokémon</h4>
+                                                            <div class="blog-detail mb-5"> Mai 2021 - Binôme </div>
+                                                            <div class="blog-content">
+                                                                <p>
+                                                                    Ce site répertorie et affiche 250 cartes Pokémon grâce à une API. <br> <br>
+                                                                    Il comporte 3 pages : <br> 
+                                                                    - une <b> page d'accueil </b>, où il y a quelques cartes Pokémons triées selon les types. <br>
+                                                                    - une page qui regroupe <b>tous les Pokémons</b>, et où se trouve un filtre permettant de 
+                                                                    rechercher un Pokémon par son nom ou son type.<br>
+                                                                    - une page <b>spécifique à chaque Pokémon</b> avec la carte de celui-ci et ses caractéristiques.
+                                                                </p>
+                                                                <p> Technologies utilisées : Angular, Angular Material, VSCode</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="close"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 element-item dev mb-5">
+                                <div class="box-item">
+                                    <div class="image">
+                                       <a href="#popup-3" class="has-popup-media">
+                                            <img src="./assets/images/projets/dev/agence.png" alt="agence">
+                                       </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="#popup-3" class="name has-popup-media">Site d'une agence événementielle</a>
+                                    </div>
+                                    <div class="mfp-container">
+                                        <div class="mfp-content">
+                                            <div id="popup-3" class="popup-box mfp-fade mfp-hide">
+                                                <div class="content">
+                                                    <div class="image pl-3 mb-4 text-center">
+                                                        <img src="./assets/images/projets/dev/musique.png" alt="musique">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="post-box">
+                                                            <h4>Site d'une agence événementielle</h4>
+                                                            <div class="blog-detail mb-5"> Juin 2020 - Groupe </div>
+                                                            <div class="blog-content">
+                                                                <p>
+                                                                    C'est un projet commun à 2 modules : <b>gestion de projet et </b> 
+                                                                    <b>développement web</b>. 
+                                                                    L'objectif était de <b>créer une agence</b> et de faire leur site web. <br> <br>
+                                                                    Cette agence s'appelle donc <b>Cultur'event</b>. Son site a pour but de la présenter,
+                                                                    ainsi que de mettre en avant ses services et ses réalisations. 
+                                                                    Pour cela, le site contient 5 pages :
+                                                                    <b>accueil, services, réalisations, actualités et contact</b>.
+                                                                </p>
+                                                                <p> Technologies utilisées : Wordpress, Gantt</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="close"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 element-item dev mb-5">
+                                <div class="box-item">
+                                    <div class="image">
+                                       <a href="#popup-4" class="has-popup-media">
+                                            <img src="./assets/images/projets/dev/musique.png" alt="musique">
+                                       </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="#popup-4" class="name has-popup-media">Application de musique</a>
+                                    </div>
+                                    <div class="mfp-container">
+                                        <div class="mfp-content">
+                                            <div id="popup-4" class="popup-box mfp-fade mfp-hide">
+                                                <div class="content">
+                                                    <div class="image pl-3 mb-4 text-center">
+                                                        <img src="./assets/images/projets/dev/musique.png" alt="musique">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="post-box">
+                                                            <h4>Application de musique</h4>
+                                                            <div class="blog-detail mb-5"> Février 2021 - Binôme </div>
+                                                            <div class="blog-content">
+                                                                <p>
+                                                                    <b>Music4You</b> est une application de musique qui comporte seulement 4 musiques. <br> <br>
+                                                                    L'objectif de cette application est de faire tourner des musiques avec la 
+                                                                    possibilité de les mettre sur pause, sur play ainsi que de les faire recommencer au début. <br> <br>
+                                                                    La <b>page d'accueil</b> présente les 4 musiques, à l'aide d'un <b>Collection View</b>. 
+                                                                    Chaque musique a une page spécifique qui permet donc de l'écouter.
+                                                                </p>
+                                                                <p> Technologies utilisées : Swift, XCode</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="close"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 element-item des mb-5">
+                                <div class="box-item">
+                                    <div class="image">
+                                       <a href="#popup-5" class="has-popup-media">
+                                            <img src="./assets/images/projets/design/maquette.png" alt="maquette">
+                                       </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="#popup-5" class="name has-popup-media">Maquette d'une application</a>
+                                    </div>
+                                    <div class="mfp-container">
+                                        <div class="mfp-content">
+                                            <div id="popup-5" class="popup-box mfp-fade mfp-hide">
+                                                <div class="content">
+                                                    <div class="image pl-3 mb-4 text-center">
+                                                        <img src="./assets/images/projets/design/maquette.png" alt="maquette">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="post-box">
+                                                            <h4>Maquette d'une application</h4>
+                                                            <div class="blog-detail mb-5"> Avril 2021 - Individuel </div>
+                                                            <div class="blog-content">
+                                                                <p>
+                                                                    Lors d'un projet de groupe, nous devions créer un <b>concept d'application</b>. <br><br>
+                                                                    Nous avons créé une application qui permet d'améliorer sa conscience écologique en 
+                                                                    réalisant des actions dans la vie. Elle fonctionne autour d'un jeu, 
+                                                                    avec une <b>ville virtuelle</b> que l'on peut améliorer. <br> <br>
+                                                                    De mon côté, je me suis occupée de <b>réaliser la maquette de l'application</b>.
+                                                                </p>
+                                                                <p> Technologie utilisée : Adobe XD</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="close"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 element-item des mb-5">
+                                <div class="box-item">
+                                    <div class="image">
+                                       <a href="#popup-6" class="has-popup-media">
+                                            <img src="./assets/images/projets/design/lion.png" alt="lion">
+                                       </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="#popup-6" class="name has-popup-media">Visuel pour vêtement</a>
+                                    </div>
+                                    <div class="mfp-container">
+                                        <div class="mfp-content">
+                                            <div id="popup-6" class="popup-box mfp-fade mfp-hide">
+                                                <div class="content">
+                                                    <div class="image pl-3 mb-4 text-center">
+                                                        <img src="./assets/images/projets/design/lion.png" alt="lion">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="post-box">
+                                                            <h4>Visuel pour vêtement</h4>
+                                                            <div class="blog-detail mb-5"> Décembre 2019 - Individuel </div>
+                                                            <div class="blog-content">
+                                                                <p>
+                                                                    L'objectif était de créer un visuel pour une marque de vêtement. <br> <br>
+                                                                    J'ai décidé de faire un <b>mandala animal</b>, et plus précisement 
+                                                                    d'une tête de <b>lion</b>. <br>
+                                                                    Le visuel est en <b>noir et blanc</b>, avec une touche de <b>jaune</b> 
+                                                                    pour faire ressortir les
+                                                                    yeux du lion.
+                                                                </p>
+                                                                <p> Technologie utilisée : Illustrator</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="close"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 element-item js mb-5">
+                                <div class="box-item">
+                                    <div class="image">
+                                       <a href="#popup-7" class="has-popup-media">
+                                            <img src="./assets/images/projets/js/foot.png" alt="foot">
+                                       </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="#popup-7" class="name has-popup-media">Liste des meilleurs footballeurs</a>
+                                    </div>
+                                    <div class="mfp-container">
+                                        <div class="mfp-content">
+                                            <div id="popup-7" class="popup-box mfp-fade mfp-hide">
+                                                <div class="content">
+                                                    <div class="image pl-3 mb-4 text-center">
+                                                        <img src="./assets/images/projets/js/foot.png" alt="foot">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="post-box">
+                                                            <h4>Liste des meilleurs footballeurs</h4>
+                                                            <div class="blog-detail mb-5"> Septembre 2021 - Individuel </div>
+                                                            <div class="blog-content">
+                                                                <p>
+                                                                    J'ai réalisé ce projet pour développer mes compétences en <b>Javascript</b>. <br><br>
+                                                                    Ce site permet de trier les meilleurs footballeurs du monde en fonction de leur <b>nationalité</b>,
+                                                                    du <b>nombre de coupe du monde</b> gagnées, 
+                                                                    de leur <b>poste</b> ou tout simplement par leur <b>nom</b>.
+                                                                </p>
+                                                                <p> Technologies utilisées : HTML, CSS, Javascript</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="close"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 element-item js mb-5">
+                                <div class="box-item">
+                                    <div class="image">
+                                       <a href="#popup-8" class="has-popup-media">
+                                            <img src="./assets/images/projets/js/imagecss.png" alt="imagecss">
+                                       </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="#popup-8" class="name has-popup-media">Modifier la CSS avec du Javascript</a>
+                                    </div>
+                                    <div class="mfp-container">
+                                        <div class="mfp-content">
+                                            <div id="popup-8" class="popup-box mfp-fade mfp-hide">
+                                                <div class="content">
+                                                    <div class="image pl-3 mb-4 text-center">
+                                                        <img src="./assets/images/projets/js/imagecss.png" alt="imagecss">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="post-box">
+                                                            <h4>Modifier la CSS avec du Javascript</h4>
+                                                            <div class="blog-detail mb-5"> Septembre 2021 - Individuel </div>
+                                                            <div class="blog-content">
+                                                                <p>
+                                                                    J'ai réalisé ce projet pour développer mes compétences en <b>Javascript</b>. <br><br>
+                                                                    Ce site permet de modifier l'aspect de l'image avec différents paramètres : <br>
+                                                                    - <b>l'échelle de gris</b><br>
+                                                                    - <b>la teinte</b><br>
+                                                                    - <b>l'ombre</b> (son espace, son flou et sa couleur) 
+                                                                </p>
+                                                                <p> Technologies utilisées : HTML, CSS, Javascript</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="close"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -399,8 +747,116 @@
             <div class="card-inner" id="exp-card">
                 <div class="card-wrap">
                     <div class="content exp">
-                        <div class="title">
-                            <p>Expériences</p>
+                        <div class="row">
+                            <div class="col-6 big-icon text-center">
+                                <i class="fas fa-user"></i>
+                                <p>Expériences</p>
+                            </div>
+                            <div class="col col-6 stage">
+                                <div class="stage-title">Stage de fin d'année -  DUT MMI</div>
+                                <div class="row stage-item ml-1">
+                                    <div class="col-4 text-center">
+                                        <i class="icon far fa-calendar-alt"></i>
+                                        <p class="date">26 avril 2021 <br> au 25 juin 2021</p>
+                                    </div>
+                                    <div class="col-8 text-center">
+                                        <i class="icon far fa-building"></i>
+                                        <p class="school">Association Savoirs <br> Émancipation Vie Étudiante</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-6 description">
+                                <p>
+                                    Dans le cadre de mon DUT MMI, j'ai eu l'opportunité d'effectuer un <b>stage de 8 semaines</b>
+                                    dans le monde professionnel. <br><br>
+                                    L'association <b>SEVE</b> gère le bâtiment <b>Espace Vie Étudiante </b>(EVE) situé sur le campus à Saint-Martin-d'Hères. 
+                                    Ce bâtiment comporte plusieurs espaces pour accueillir les associations étudiantes et leur permettre d'organiser des 
+                                    événements. Pour cela, un <b>outil de gestion d'événements</b> (appelé FormEvent) a été développé pour permettre à 
+                                    l'équipe de planifier ces derniers. 
+                                </p>
+                            </div>
+                            <div class="col col-6 missions">
+                                <p>
+                                    Les missions du stage étaient centrées autour du <b>FormEvent</b> et de la <b>plateforme Alvéole</b>, un réseau social 
+                                    pour les étudiants et leurs associations. <br><br>
+                                    Les besoins de la plateforme ont évolué et Alvéole ne répond plus à ces derniers. Mes missions étaient donc de 
+                                    <b>définir les besoins actuels</b> de la plateforme, de proposer des <b>pistes d'évolution</b> et/ou de refonte, 
+                                    puis d'<b>améliorer la plateforme</b>. <br> <br>
+                                    À cela, s'est rajouté la mission de <b>migrer le FormEvent sur un autre nom de domaine</b>.
+                                </p>
+                            </div>
+                            <div class="col col-6 etape1">
+                                <div class="stage-title">Découverte : environnement de travail</div>
+                                <p>
+                                    La plateforme a été développée avec le CMS Joomla, et les composants <b> Community Builder et GroupJive </b>
+                                    pour créer une plateforme communautaire avec des <b> profils utilisateurs</b> et des <b> pages associations </b>. <br><br>
+                                    Pour ce qui est de l'<b>outil de gestion d'événements</b>, il a été développé en <b>PHP</b>, et il comporte donc de 
+                                    nombreux fichiers sources.
+                                </p>
+                            </div>
+                            <div class="col col-6 etape2">
+                                <div class="stage-title">Audit : plateforme Alvéole et FormEvent</div>
+                                <p>
+                                    Pour déterminer les besoins de la plateforme Alvéole et du FormEvent, j'avais besoin des <b>avis 
+                                    de ses utilisateurs </b> : les <b>associations</b> et l'<b>équipe</b> qui travaille avec le FormEvent.
+                                    <br><br> J'ai donc tout d'abord eu des <b>entretiens</b> avec chaque membre de l'équipe, puis j'ai réalisé un 
+                                    <b>questionnaire sur l'utilisation de la plateforme</b>, que j'ai envoyé aux associations.         
+                                </p>
+                            </div>
+                            <div class="col col-6 etape3">
+                                <div class="stage-title">Définir les besoins</div>
+                                <p>
+                                    En m'appuyant sur les réponses de ce questionnaire, j'ai pu déterminer les <b>différents 
+                                    besoins des utilisateurs</b> de la plateforme Alvéole. <br><br>
+                                    Les besoins <b>majeurs</b> sont l'annuaire associatif et les demandes d'événements. <br><br>
+                                    Les besoins<b> facultatifs</b> sont les offres de bénévolat et le contenu des réseaux sociaux.        
+                                </p>
+                            </div>
+                            <div class="col col-6 etape4">
+                                <div class="stage-title">Trouver des solutions</div>
+                                <p>
+                                    Il fallait maintenant trouver des <b>solutions adaptées</b> à ces besoins : <br><br>
+                                    - Rester sur <b>Joomla</b> : améliorer la plateforme et le FormEvent <br>
+                                    - Passer sur <b>Wordpress</b> : transférer le site sur Wordpress, qui est plus simple à utiliser <br>
+                                    - Utiliser une <b>plateforme de gestion de communauté</b> : la plateforme <a href="https://www.wenity.fr">Wenity</a>
+                                </p>
+                            </div>
+                            <div class="col col-6 etape5">
+                                <div class="stage-title">Améliorer la plateforme Alvéole</div>
+                                <p>
+                                    Sur la <b>page d'un utilisateur</b>, j'ai supprimé la messagerie privée, qui n'était pas utilisée par les utilisateurs. <br><br>
+                                    Sur la <b>page d'une structure</b>, j'ai rajouté trois champs (président, secrétaire, trésorier) pour donner plus d'informations 
+                                    sur l'association. <br><br>
+                                    Concernant le <b>formulaire</b>, j'ai modifié quelques points pour qu'il soit plus compréhensible par les 
+                                    utilisateurs. J'ai également ajouté un tableau avec les <b>dernières demandes d'événements</b> au-dessus de celui-ci. 
+                                </p>
+                                <p>Technologies : Joomla, PHP</p>
+                            </div>
+                            <div class="col col-6 etape6">
+                                <div class="stage-title">Améliorer l'outil de gestion d'événement</div>
+                                <p>
+                                    La première étape a été de <b>corriger les bugs</b> présents sur le FormEvent. <br><br> 
+                                    Parmi ces derniers, les <b>mails préremplis</b> utilisés par l'équipe n'étaient plus à jour ou ne fonctionnaient plus.
+                                    Pour corriger cela, j'ai dû étudier le <b>code source en PHP</b>, ce qui a demandé de la patience et de la concentration. <br><br>
+                                    Ensuite, j'ai apporté quelques modifications pour <b>améliorer la lisibilité</b> du FormEvent. Cela passe par 
+                                    du renommage de parties, ou la suppression des anciens événements. 
+                                </p>
+                                <p>Technologies : PHP, Base de données, MySQL</p>
+                            </div>
+                            <div class="col col-12 etape7">
+                                <div class="stage-title">Transfert d'hébergement</div>
+                                <p>
+                                    La plateforme Alvéole est hébergée sur le domaine <b>asso-seve.org</b> alors que 
+                                    le FormEvent est hébergé sur <b>eve-grenoble.fr</b>. Cette organisation pose problème
+                                    car l'association qui gère actuellement le bâtiment sera différente l'année prochaine. <br><br>
+                                    Il fallait donc <b>transférer la base de données et les ressources du site</b>. <br><br>
+                                    Je me suis confronté à un problème lors de ce transfert : les <b>versions de PHP étaient différentes</b>
+                                    entre les deux  hébergements, ce qui a fait que les requêtes SQL ne fonctionnaient plus. 
+                                    J'ai donc dû <b>corriger les fichiers</b> pour les écrire en <b>MySQLi</b> afin que le lien entre le formulaire 
+                                    et le FormEvent fonctionne.
+                                </p>
+                                <p>Technologies : OVH, Base de données</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -440,8 +896,10 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="assets/jquery.js"></script>    
-        <script type="text/javascript" src="script.js"></script>    
+        <script type="text/javascript" src="js/jquery.js"></script>    
+        <script type="text/javascript" src="js/isotope.pkgd.js"></script>    
+        <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>    
+        <script type="text/javascript" src="js/script.js"></script>    
     </body>
 
 </html>

@@ -1,0 +1,176 @@
+/********************************************
+                POLICE
+********************************************/
+
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "montserrat-medium";
+    src: url("../fonts/montserrat/Montserrat-Medium.ttf");
+}
+
+/********************************************
+                HOME CARD
+********************************************/
+
+#home-card {
+    /* Position */
+    position: relative;
+    top: 73.5px;
+    float: left;
+    z-index: 11;
+
+    /* Taille */
+    width: 400px;
+    height: 100%;
+}
+
+#home-card::before {
+    /* Position */
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    /* Taille */
+    width: 100%;
+    height: 100%;
+    
+    /* Apparence */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    content: '';
+}
+
+.profile {
+    /* Position */
+    position: relative;
+    padding: 210px 50px 50px 50px;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+
+    /* Taille */
+    width: 100%;
+    height: 100%;
+    
+    /* Police */
+    text-align: center;
+    background-color: white;
+}
+
+.photo {
+    /* Position */
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    /* Taille */
+    height: 50%;
+    width: 100%;
+
+    /* Fond */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 38%;
+
+    /* Apparence */
+    overflow: hidden;
+}
+
+.title {
+    /* Police */
+    font-size: 28px;
+    font-family: "montserrat-medium";
+    color: black;
+
+    /* Marge */
+    margin: 10px 0 10px 0;
+}
+
+.subtitle {
+    /* Position */
+    position: relative;
+    display: inline-block;
+
+    /* Taille */
+    height: 20px;
+
+    /* Marge */
+    margin: 0;
+    margin: 5px 0 20px 0;
+    line-height: 15px;
+
+    /* Police */
+    font-size: 18px;
+    color:black;
+}
+
+.social {
+    /* Position */
+    position: relative;
+
+}
+
+.social a {
+    /* Position */
+    display: inline-block;
+    vertical-align: middle;
+
+    /* Marge */
+    margin: 0 10px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    outline: none;
+
+    /* Police */
+    font-size: 25px;
+    /* color: black; */
+    color: #005fdb;
+}
+
+.liens {
+    /* Position */
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+
+    /* Taille */
+    width: 100%;
+    height: 60px;
+
+    /* Apparence */
+    font-family: "kalam";
+    font-size: 20px;
+    border-top: solid 1.5px black;
+}
+
+.lien {
+    /* Position */
+    position: relative;
+    display: block;
+    float: none;
+
+    /* Taille */
+    width: 100%;
+
+    /* Marge */
+    line-height: 65px;
+
+    /* Police */
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.lien:hover {
+    /* Apparence */
+    text-decoration: none;
+    color: #005fdb;
+}

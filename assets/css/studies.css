@@ -1,0 +1,84 @@
+/********************************************
+                POLICES
+********************************************/
+
+@font-face {
+    font-family: "montserrat-light";
+    src: url("../fonts/montserrat/Montserrat-Light.ttf");
+}
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "montserrat-medium";
+    src: url("../fonts/montserrat/Montserrat-Medium.ttf");
+}
+
+/********************************************
+            STUDIES CARD
+********************************************/
+
+.studies-title {
+    /* Position */
+    position: relative;
+
+    /* Marge */
+    padding: 12px;
+    margin: 0px 0 25px 0;
+
+    /* Police */
+    font-family: "montserrat-medium";
+    text-align: center;
+    font-size: 17px;
+    color: #005fdb;
+
+    /* Apparence */
+    border: 1px solid #005fdb;
+    border-radius: 10px; 
+}
+
+.studies-item .icon {
+    /* Position */
+    position: relative;
+    height: 35px;
+
+    /* Police */
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.studies-item .school, .studies-item .place, .studies-item .date {
+    /* Police */
+    font-size: 15px;
+    color: black;
+    font-weight: 400;
+    text-transform: none;
+    font-family: "montserrat-light";
+}
+
+.studies .desc1 p {
+    /* Marge */
+    margin: 8px 0 40px 0;
+
+    /* Police */
+    font-size: 15px;
+    text-align: center;
+}
+
+.studies .desc2 p {
+    /* Marge */
+    margin: 8px 0 0px 0;
+
+    /* Police */
+    font-size: 15px;
+    text-align: center;
+}
+
+.studies-item .school {
+    /* Marge */
+    padding-bottom: 25px;
+
+    /* Bord */
+    border-bottom: 1px solid black;
+}

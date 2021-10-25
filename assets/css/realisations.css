@@ -1,0 +1,95 @@
+/********************************************
+                POLICES
+********************************************/
+
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+/********************************************
+            REALISATIONS CARD
+********************************************/
+
+/* Filtres */
+
+.works .filter-button .button-group {
+    /* Marge */
+    margin: 50px 0 0 50px;
+
+    /* Apparence */
+    list-style: circle;
+}
+
+.button-group li {
+    /* Marge */
+    margin: 10px 0;
+}
+
+.button-group li button {
+    /* Apparence */
+    border: none;
+    background-color: white;
+
+    /* Police */
+    font-size: 17px;
+
+}
+
+.button-group li button:hover {
+    /* Apparence */
+    background-color: #005fdb;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.works .box-item {
+    /* Position */
+    position: relative;
+    overflow: visible;
+    text-align: center;
+}
+
+.works .box-item .image {
+    /* Position */
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.works .box-item .image img {
+    /* Position */
+    position: relative;
+    height: auto;
+    text-align: center;
+
+    /* Taille */
+    width: 90%;
+}
+
+.works .box-item .desc {
+    /* Position */
+    position: relative;
+
+    /* Marge */
+    padding: 15px 0 0 0;
+}
+
+.works .box-item .desc a {
+    /* Apparence */
+    color: black;
+    text-decoration: none;
+}
+
+.works .box-item .desc .name {
+    /* Position */
+    display: block;
+
+    /* Marge */
+    padding: 0;
+
+    /* Police */
+    font-size: 17px;
+    text-transform: none;
+}

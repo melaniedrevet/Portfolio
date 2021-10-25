@@ -1,0 +1,150 @@
+/********************************************
+                POLICES
+********************************************/
+
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+/********************************************
+            COMPETENCES CARD
+********************************************/
+
+.skills .title {
+    /* Position */
+    position: relative;
+
+    /* Marge */
+    padding-top: 10px;
+    padding-bottom: 16px;
+    margin-left: 40px;
+}
+
+.skills .title .icon {
+    /* Position */
+    position: relative;
+    float: left;
+
+    /* Police */
+    color: #005fdb;
+    font-size: 25px;
+}
+
+.skills .title .name {
+    /* Marge */
+    margin: 5px 0 0 40px;
+
+    /* Police */
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+/* Listes  */
+
+.skills ul {
+    /* Marge */
+    margin: 0;
+    padding: 0;
+
+    /* Apparence */
+    list-style: none;
+}
+
+.skills ul li .name {
+    /* Marge */
+    margin: 0 0 8px 0;
+    line-height: 14px;
+
+    /* Police */
+    font-size: 15px;
+}
+
+/* Lignes de séparation */
+
+.titre, .transversales, .coding, .learning {
+    /* Bord */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    /* Marge */
+    padding: 20px 0;
+}
+
+.titre, .coding, .design {
+    /* Bord */
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Transversales */
+
+.liste li {
+    /* Position */
+    position: relative;
+
+    /* Marge */
+    padding: 6px 0;
+    margin-left: 45px;
+}
+
+.liste li .name {
+    /* Position */
+    position: relative;
+
+    /* Marge */
+    padding-left: 30px;
+}
+
+.liste li .icon {
+    /* Position */
+    position: relative;
+    float: left;
+}
+
+/* Code */
+
+.coding .col-6, .learning .col-6 {
+    /* Police */
+    text-align: center;
+}
+
+.coding .icons, .learning .icons {
+    /* Marge */
+    margin-bottom: 15px;
+
+    /* Police */
+    font-size: 32px;
+}
+
+/* Design et Langues */
+
+.design ul li, .langues ul li {
+    /* Position */
+    position: relative;
+
+    /* Marge */
+    padding: 20px 0;
+}
+
+.design .progress, .langues .progress {
+    /* Position */
+    position: relative;
+    display: block;
+
+    /* Taille */
+    width: 95%;
+    height: 4px;
+
+    /* Apparence */
+    background-color: #d8dbe2;
+}
+
+.design .pourcentage, .langues .pourcentage {
+    /* POsition */
+    position: absolute;
+
+    /* Taille */
+    height: 100%;
+
+    /* Apparence */
+    background-color: #005fdb;
+}
